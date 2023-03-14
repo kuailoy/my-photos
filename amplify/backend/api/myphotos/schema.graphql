@@ -1,0 +1,6 @@
+type Todo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  done: Boolean
+  createTime: AWSTimestamp
+}
